@@ -1,0 +1,61 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.parent {
+    display: grid;
+    width: 1390px;
+    height: 606px;
+    margin-left: -8px;
+    margin-top: -22px;
+    grid-template-areas: "header header header header header header"
+    "sidebar Content Content Content Content Content"
+    "sidebar Content Content Content Content Content "
+    "sidebar Content Content Content Content Content"
+    "sidebar Content Content Content Content Content"
+    "sidebar Content Content Content Content Content"
+    "sidebar Content Content Content Content Content"
+    "sidebar Content Content Content Content Content"
+    "sidebar Content Content Content Content Content"
+    "sidebar Content Content Content Content Content"
+    "sidebar Content Content Content Content Content"
+    "sidebar Content Content Content Content Content"
+    "sidebar Content Content Content Content Content"
+    "sidebar Content Content Content Content Content"
+    "sidebar Content Content Content Content Content"
+    "sidebar Content Content Content Content Content"
+    "footer footer footer footer footer footer";
+}
+.Header{
+    background-color: green;
+    color: white;
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+}
+.Sidebar{
+    grid-area: sidebar;
+    background-color: rgb(184, 181, 178);
+    padding: 25px;
+}
+.Content{
+    grid-area: Content ;
+    background-color: white;
+    padding: 25px;
+}
+.Footer{
+    background-color: rgb(116, 116, 113);
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.Header::after{
+    content: "Header";
+    margin-top: 10px;
+    position: absolute;
+}
